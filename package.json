@@ -1,0 +1,29 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register test/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukkikkpl/string-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kukkikkpl/string-calculator/issues"
+  },
+  "homepage": "https://github.com/kukkikkpl/string-calculator#readme",
+  "devDependencies": {
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
