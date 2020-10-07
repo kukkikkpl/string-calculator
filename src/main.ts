@@ -1,8 +1,11 @@
-export function stringToNum(numbers:string) {
+export function Add(numbers:string): number {
   if (numbers === '') {
     return 0;
   } 
   if (+numbers) {
+    if (isNegative(+numbers)) {
+      throw new Error('Negatives not allowed');
+    }
     return +numbers;
   }
 
@@ -17,9 +20,16 @@ export function stringToNum(numbers:string) {
   
   var sum = 0;
   numberArray.forEach(ele => {
+    if (isNegative(+ele)) {
+      throw new Error('Negatives not allowed');
+    }
     sum += +ele;
   })
-  
+    
   return sum;
   
+}
+
+function isNegative(num:number) {
+  return num < 0 ? true : false;
 }
