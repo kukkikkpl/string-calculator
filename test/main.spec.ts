@@ -69,4 +69,9 @@ describe('Convert string to number', () => {
     expect(num).equal(6);
   });
 
+  it('//[,,][AAA]\\n1\\n2AAA3,,4 should be equal to 10', () => {
+    const num = Add('//[,,][AAA]\n1\n2AAA3,,4');    
+    expect(num).equal(10);
+  });
+
 });
